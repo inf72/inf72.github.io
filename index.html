@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
         <link rel="stylesheet" href="css/main.css" type="text/css">
 
+
         <script src="js/modernizr.custom.js"></script>
     </head>
 
@@ -1229,28 +1230,28 @@
                                 <div class="row">
                                     <!-- Contact Info -->
                                     <div class="col-xs-12 col-sm-4">
-                                        <div class="lm-info-block gray-default">
+                                        <div class="lm-info-block gray-default" style="height:100px;">
                                             <i class="lnr lnr-map-marker"></i>
                                             <h4>Bekasi</h4>
                                             <span class="lm-info-block-value"></span>
                                             <span class="lm-info-block-text"></span>
                                         </div>
 
-                                        <div class="lm-info-block gray-default">
+                                        <div class="lm-info-block gray-default" style="height:100px;">
                                             <i class="lnr lnr-phone-handset"></i>
                                             <h4>089659165004</h4>
                                             <span class="lm-info-block-value"></span>
                                             <span class="lm-info-block-text"></span>
                                         </div>
 
-                                        <div class="lm-info-block gray-default">
+                                        <div class="lm-info-block gray-default" style="height:100px;">
                                             <i class="lnr lnr-envelope"></i>
                                             <h4>inurfauzi72@gmail.com</h4>
                                             <span class="lm-info-block-value"></span>
                                             <span class="lm-info-block-text"></span>
                                         </div>
 
-                                        <div class="lm-info-block gray-default">
+                                        <div class="lm-info-block gray-default" style="height:100px;">
                                             <i class="lnr lnr-checkmark-circle"></i>
                                             <h4>Available</h4>
                                             <span class="lm-info-block-value"></span>
@@ -1356,18 +1357,43 @@
         <script src="js/jquery.googlemap.js"></script>
         <script src="js/validator.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/form.js"></script>
+        <!-- <script src="js/form.js"></script> -->
 
         <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbzOluZwJ4rLdkutXilQlLHc_PYlpVihtkPgRxJgnvZENu1sq0WLAio03GuVl-Eok-N_/exec'
-            const form = document.forms['submit-to-google-sheet']
+            document.addEventListener("DOMContentLoaded", function () {
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbzOluZwJ4rLdkutXilQlLHc_PYlpVihtkPgRxJgnvZENu1sq0WLAio03GuVl-Eok-N_/exec'
+                const form = document.forms['my-contact-form'];
+                const btnSend = document.querySelector('.btn-send');
+                const btnLoading = document.querySelector('.btn-loading');
+                const myAlert = document.querySelector('.my-alert');
 
-            form.addEventListener('submit', e => {
-                e.preventDefault()
-                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                    .then(response => console.log('Success!', response))
-                    .catch(error => console.error('Error!', error.message))
-            })
+
+                form.addEventListener('submit', e => {
+                    e.preventDefault();
+                    btnLoading.classList.toggle('d-none');
+                    btnSend.classList.toggle('d-none');
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => {
+                            console.log('Success!', response);
+                            btnLoading.classList.toggle('d-none');
+                            btnSend.classList.toggle('d-none');
+                            myAlert.removeAttribute("style");
+                        })
+                        .catch(error => console.error('Error!', error.message))
+                });
+
+                $(".closebtn").click(function () {
+                    $(".my-alert").fadeOut(500);
+                });
+
+                $(window).resize(function () {
+                    console.log(screen.width);
+                    var width = screen.width;
+                    const br = document.getElementsByClassName("break")[0];
+                });
+
+            });
+
         </script>
 
 
