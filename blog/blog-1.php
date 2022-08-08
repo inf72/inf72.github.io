@@ -1,4 +1,124 @@
-          <?php include "../views/headerblog.html" ; ?>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Iqbal Nur Fauzi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Iqbal NUr Fauzi" />
+    <meta name="keywords" content="Iqbal Nur Fauzi" />
+    <meta name="author" content="Iqbal Nur Fauzi" />
+    <link rel="shortcut icon" href="../icon/favicon.png">
+
+
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/animations.css" type="text/css">
+    <link rel="stylesheet" href="../css/perfect-scrollbar.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+
+    <script src="../js/modernizr.custom.js"></script>
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="lm-animated-bg" style="background-image: url(img/main_bg.png);"></div>
+    <!-- /Animated Background -->
+
+    <!-- Loading animation -->
+    <div class="preloader">
+        <div class="preloader-animation">
+            <div class="preloader-spinner">
+            </div>
+        </div>
+    </div>
+    <!-- /Loading animation -->
+
+    <div class="page">
+        <div class="page-content">
+
+            <header id="site_header" class="header mobile-menu-hide">
+                <div class="header-content">
+                    <div class="header-photo">
+                        <img src="../icon/favicon1.png" alt="Alex Smith">
+                    </div>
+                    <div class="header-titles">
+                        <h2>Iqbal Nur Fauzi</h2>
+                        <h4>Mechatronics Engineer</h4>
+                    </div>
+                </div>
+
+                <ul class="main-menu">
+                    <li>
+                        <a href="../index.php#home" class="nav-anim">
+                            <span class="menu-icon lnr lnr-home"></span>
+                            <span class="link-text">HOME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.php#about-me" class="nav-anim">
+                            <span class="menu-icon lnr lnr-user"></span>
+                            <span class="link-text">ABOUT ME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.php#resume" class="nav-anim">
+                            <span class="menu-icon lnr lnr-graduation-hat"></span>
+                            <span class="link-text">RESUME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.php#blog" class="nav-anim">
+                            <span class="menu-icon lnr lnr-book"></span>
+                            <span class="link-text">BLOG</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.php#contact" class="nav-anim">
+                            <span class="menu-icon lnr lnr-envelope"></span>
+                            <span class="link-text">CONTACT</span>
+                        </a>
+                    </li>
+
+                    <!-- <li>
+                <a href="#portfolio" class="nav-anim">
+                  <span class="menu-icon lnr lnr-briefcase"></span>
+                  <span class="link-text">Portfolio</span>
+                </a>
+              </li>
+               -->
+
+                </ul>
+
+                <div class="social-links">
+                    <ul>
+
+                        <li><a href="https://web.facebook.com/iqbal.nurfauzi.58" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com/inurfauzi72" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/inurfauzi72/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/iqbal-nur-fauzi-895a3812b/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/inf72" target="_blank"><i class="fab fa-github"></i></a></li>
+
+                    </ul>
+                </div>
+
+                <div class="header-buttons">
+                    <a href="https://drive.google.com/file/d/1yBfdgVyAkOkkvAsF_xeQWyT1cJj6WC3G/view?usp=sharing" target="_blank" class="btn btn-primary">Download CV</a>
+                </div>
+
+                <div class="copyrights">&copy; 2021 - IQBAL NUR FAUZI</div>
+            </header>
+
+            <!-- Mobile Navigation -->
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- End Mobile Navigation -->
 
 
           <div class="content-area single-page-area">
@@ -104,4 +224,28 @@
             </div>
           </div>
 
-          <?php include "../views/footer.html" ; ?>
+          </div>
+</div>
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/animating.js"></script>
+
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<script src='js/perfect-scrollbar.min.js'></script>
+<script src='js/jquery.shuffle.min.js'></script>
+<script src='js/masonry.pkgd.min.js'></script>
+<script src='js/owl.carousel.min.js'></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
+<script src="js/jquery.googlemap.js"></script>
+<script src="js/validator.js"></script>
+<script src="js/main.js"></script>
+<script src="js/form.js"></script>
+
+</body>
+
+</html>
