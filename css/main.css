@@ -205,6 +205,7 @@ input[type="submit"]:focus {
     background-color: #0ba376;
     color: #fff;
     border: 2px solid #0ba376;
+    cursor: pointer;
 }
 
 .btn-secondary {
