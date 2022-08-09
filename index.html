@@ -112,7 +112,7 @@
                             target="_blank" class="btn btn-primary">Download CV</a>
                     </div>
 
-                    <div class="copyrights">&copy; 2022 - IQBAL NUR FAUZI</div>
+                    <div class="copyrights">&copy; 2022</div>
                 </header>
 
                 <!-- Mobile Navigation -->
@@ -1392,11 +1392,15 @@
                     alertFailed.fadeOut("slow");
                 });
 
-                // $(window).resize(function () {
-                //     console.log(screen.width);
-                //     var width = screen.width;
-                //     const br = document.getElementsByClassName("break")[0];
-                // });
+                $(window).resize(function () {
+                    console.log(screen.height);
+                    if (screen.height <= 480) {
+                        $(".copyrights").addClass("d-none");
+                    }
+                    if (screen.height > 480) {
+                        $(".copyrights").removeClass("d-none");
+                    }
+                });
 
             });
 
