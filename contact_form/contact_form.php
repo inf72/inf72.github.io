@@ -69,12 +69,11 @@ if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'
             echo $encoded;
     endif;
 else:
-    $errorMessage = 'Please click on the reCAPTCHA box.';
-    $responseArray = array('type' => 'danger', 'message' => $errorMessage);
-    $encoded = json_encode($responseArray);
+    // $errorMessage = 'Please click on the reCAPTCHA box.';
+    // $responseArray = array('type' => 'danger', 'message' => $errorMessage);
+    // $encoded = json_encode($responseArray);
 
-            header('Content-Type: application/json');
+    //         header('Content-Type: application/json');
 
-            echo $encoded;
+    //         echo $encoded;
 endif;
-
